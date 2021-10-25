@@ -6,6 +6,13 @@ function App() {
   return (
     <div className="ui container comments">
       <ApprovalCard>
+        <div>
+          <h5>Warning!</h5>
+          Are you sure?
+        </div>
+      </ApprovalCard>
+
+      <ApprovalCard>
         <CommentDetail
           author="Sam"
           timePosted="Today at 4:45PM"
@@ -22,6 +29,7 @@ function App() {
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
+
       <ApprovalCard>
         <CommentDetail
           author="Jane"
