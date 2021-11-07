@@ -6,7 +6,9 @@ class App extends React.Component {
     super(props)
     this.state = { lat: null }
     navigator.geolocation.getCurrentPosition(
-      position => console.log(position),
+      position => {
+        this.setState({ lat: position.coords.latitude })        
+      },
       err => console.log(err)
     )
   }
