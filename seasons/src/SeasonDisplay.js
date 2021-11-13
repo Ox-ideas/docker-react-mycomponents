@@ -12,7 +12,9 @@ const SeasonDisplay = (props) => {
     console.log(season)
     
     return (
-        <div>Season Display</div>
+        <div>
+            {season === 'winter' ? 'Burr, it\'s chilly' : 'Let\'s hit the beach'}
+        </div>
     )
 }
 
