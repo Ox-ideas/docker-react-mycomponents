@@ -10,9 +10,12 @@ const seasonConfig = {
 }
 
 const getSeason = (lat, month) => {
+    //- check for apr to sep
     if (month > 2 && month < 9) {
         return lat > 0 ? 'summer' : 'winter'
-    } else {
+    } 
+    //- rest of the months (oct to mar)
+    else {
         return lat > 0 ? 'winter' : 'summer'
     }
 }
@@ -24,9 +27,9 @@ const SeasonDisplay = (props) => {
     
     return (
         <div>
-            <i className={`${iconName} icon`} />
+            <i className={`massive ${iconName} icon`} />
             <h3>{text}</h3>
-            <i className={`${iconName} icon`} />
+            <i className={`massive ${iconName} icon`} />
         </div>
     )
 }
