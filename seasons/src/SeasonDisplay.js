@@ -1,3 +1,5 @@
+import './SeasonDisplay.css'
+
 const seasonConfig = {
     summer: {
         text: "Let's hit the beach!",
@@ -26,10 +28,10 @@ const SeasonDisplay = (props) => {
     console.log(season)
     
     return (
-        <div>
-            <i className={`massive ${iconName} icon`} />
+        <div className={`season-display ${season}`}>
+            <i className={`icon-left massive ${iconName} icon`} />
             <h3>{text}</h3>
-            <i className={`massive ${iconName} icon`} />
+            <i className={`icon-right massive ${iconName} icon`} />
         </div>
     )
 }
