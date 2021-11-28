@@ -1,5 +1,6 @@
 import Message from './exercises/Ex1Message'
 import Placeholder from './exercises/Ex2Placeholder';
+import UserForm from './exercises/Ex3ClassBaseddComponent';
 
 function App() {
   return (
@@ -42,6 +43,11 @@ function Quiz(ex) {
         </div>
       )
 
+    case 3:
+      return (
+        <UserForm />
+      )
+
     default:
       console.log('Out of ex ' + ex + '.')
       return (
@@ -50,4 +56,4 @@ function Quiz(ex) {
   }
 }
 
-const ex = 2;
+const ex = 3;
