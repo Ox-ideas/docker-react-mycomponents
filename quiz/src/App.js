@@ -1,6 +1,7 @@
 import Message from './exercises/Ex1Message'
 import Placeholder from './exercises/Ex2Placeholder';
 import UserForm from './exercises/Ex3ClassBaseddComponent';
+import Clock from './exercises/Ex4UpdatingComponentsWithState';
 
 function App() {
   return (
@@ -48,6 +49,11 @@ function Quiz(ex) {
         <UserForm />
       )
 
+    case 4:
+      return (
+        <Clock />
+      )
+
     default:
       console.log('Out of ex ' + ex + '.')
       return (
@@ -56,4 +62,4 @@ function Quiz(ex) {
   }
 }
 
-const ex = 3;
+const ex = 4;
